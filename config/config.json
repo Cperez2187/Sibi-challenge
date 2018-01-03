@@ -5,7 +5,11 @@
     "database": "blogger",
     "host": "127.0.0.1",
     "dialect": "postgres",
-    "url": "postgres://jsgmaypkrfulzo:f51f47854dff918607c40f6d6f5de7fdabe71fc4a2d435e6508cc457130b2420@ec2-54-235-148-19.compute-1.amazonaws.com:5432/d9gpid9q4r6k6q"
+    "url": "postgres://jsgmaypkrfulzo:f51f47854dff918607c40f6d6f5de7fdabe71fc4a2d435e6508cc457130b2420@ec2-54-235-148-19.compute-1.amazonaws.com:5432/d9gpid9q4r6k6q",
+    "ssl": false,
+    "dialectOptions": {
+      "ssl": false
+    }
   },
   "test": {
     "username": "root",
@@ -13,7 +17,11 @@
     "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "postgres",
-    "use_env_variable": "DATABASE_URL"
+    "use_env_variable": "DATABASE_URL",
+    "ssl": false,
+    "dialectOptions": {
+      "ssl": false
+    }
   },
   "production": {
     "username": "root",
@@ -21,6 +29,10 @@
     "database": "database_production",
     "host": "127.0.0.1",
     "dialect": "postgres",
-    "use_env_variable": "DATABASE_URL"
+    "use_env_variable": "DATABASE_URL",
+    "ssl": false,
+    "dialectOptions": {
+      "ssl": false
+    }
   }
 }
