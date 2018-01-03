@@ -3,11 +3,11 @@
 | Main Component. Wraps all other components
 |--------------------------------------------------
 */
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 // Import child components
-import NavBar from "./children/NavBar.js";
-import Form from "./children/Form.js";
+import NavBar from './children/NavBar.js';
+import Form from './children/Form.js';
 
 export default class Main extends Component {
   constructor() {
@@ -17,8 +17,16 @@ export default class Main extends Component {
   render() {
     return (
       <div>
-        <NavBar />
-        <Form />
+        <header>
+          <div className="row">
+            <NavBar />
+          </div>
+        </header>
+        <div className="container">
+          <div className="row">
+            <Form />
+          </div>
+        </div>
       </div>
     );
   }
